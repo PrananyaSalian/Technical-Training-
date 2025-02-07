@@ -1,0 +1,22 @@
+//PSUEDOCODE
+
+ Function findHighestSalesDay(sales):
+ 1. Set maxSale = sales[0]  // Assume first day's sales are the highest
+ 2. Set maxDay = 1          // Days are 1-based, so start with 1
+ 3. For i from 0 to length of sales - 1:
+     a. If sales[i] > maxSale:
+        i. Set maxSale = sales[i] // Update max sale
+        ii. Set maxDay = i + 1    // Store the day (1-based index)
+ 4. Return maxDay  // Return the day with highest sales
+
+//TRY RUN 
+
+ Try Run for findHighestSalesDay:
+ Input: [500, 700, 800, 600, 800, 750]
+ Step 1: maxSale = 500, maxDay = 1
+ Step 2: 700 > 500 → maxSale = 700, maxDay = 2
+ Step 3: 800 > 700 → maxSale = 800, maxDay = 3
+ Step 4: 600 < 800 → No change
+ Step 5: 800 == 800 → No change (first occurrence matters)
+ Step 6: 750 < 800 → No change
+ Output: Day 3

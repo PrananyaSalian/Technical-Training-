@@ -1,0 +1,22 @@
+//PSUEDOCODE
+
+ Function findMostFrequentRating(ratings):
+ 1. Create an empty HashMap frequency
+ 2. For each rating in ratings:
+     a. If rating exists in frequency, increase its count by 1
+     b. Else, add rating to frequency with count 1
+ 3. Set maxFreq = 0
+ 4. Set mostFrequent = ratings[0] // Assume first rating is most frequent
+ 5. For each rating in ratings:
+     a. If frequency[rating] > maxFreq:
+        i. Set maxFreq = frequency[rating]
+        ii. Set mostFrequent = rating
+ 6. Return mostFrequent  // Return the most frequently occurring rating
+
+// try Run
+
+ Try Run for findMostFrequentRating:
+ Input: [4, 5, 3, 5, 2, 4, 5, 4]
+ Frequency Count: {4: 3, 5: 3, 3: 1, 2: 1}
+ Step 1: Max Frequency = 3
+ Step 2: 4 appears first with max frequency → Output: 4

@@ -14,4 +14,7 @@ public class FirstDuplicateFinder {
 
     public static void main(String[] args) {
         int[] numbers = {12, 9, 5, 8, 4, 5, 10};
-        System.out.println("First duplicate: " + findFirstDuplicate(n
+        System.out.println("First duplicate: " + findFirstDuplicate(numbers));
+    }
+}
+
